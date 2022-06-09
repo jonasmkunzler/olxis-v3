@@ -13,6 +13,9 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
+    grey: {
+      main: '#9E9E9E',
+    },
   },
 });
 
