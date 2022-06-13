@@ -5,9 +5,10 @@ import Copyright from '../../src/Copyright';
 import TemplateDefault from '../../src/templates/Default';
 import { makeStyles } from '@material-ui/styles';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   container: {
-    padding: spacing(8, 0, 6),
+    padding: (10, 0, 8),
+    color: 'red',
   },
 }));
 
@@ -16,8 +17,8 @@ export default function Dashboard() {
   return (
     <>
       <TemplateDefault>
-        <Container maxWidth="xl" ClassName={classes.container}>
-          <Typography variant="h4" component="h1" gutterBottom>
+        <Container maxWidth="xl" className={classes.container}>
+          <Typography variant="h4" component="h1" align="center">
             Bem vindo ao OLXIS
           </Typography>
           <Copyright />
