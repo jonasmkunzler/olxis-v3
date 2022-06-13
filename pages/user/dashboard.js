@@ -5,9 +5,9 @@ import Copyright from '../../src/Copyright';
 import TemplateDefault from '../../src/templates/Default';
 import { makeStyles } from '@material-ui/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   container: {
-    padding: (10, 0, 8),
+    padding: '2em',
     color: 'red',
   },
 }));
