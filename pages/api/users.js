@@ -1,5 +1,6 @@
 import dbConnect from '../../src/utils/dbConnect';
 import UserModel from '../../src/models/users';
+import { crypto } from '../../src/utils/password'
 
 const users = async (req, res) => {
   const { method } = req;
@@ -12,9 +13,10 @@ const users = async (req, res) => {
     case 'POST':
       const { email, password } = req.body;
       await dbConnect();
+      const passwordCryto = await crypto(password)
       const user = new UserModel({
         email,
-        password,
+        password : passwordCryto,
       });
       user.save();
       res.status(201).json({ success: true });

@@ -66,7 +66,7 @@ export default function Dashboard() {
   return (
     <>
       <TemplateDefault>
-        <Container maxWidth="xl" className={classes.container}>
+        <Container maxwidth="xl" className={classes.container}>
           <Typography variant="h4" component="h1" align="center">
             Bem vindo ao OLXIS
           </Typography>
@@ -86,7 +86,7 @@ export default function Dashboard() {
           </div>
           <Copyright />
         </Container>
-        <Container maxWigth="md">
+        <Container maxwigth="md">
           <Grid container>
             <Grid item xs={12} sm={6} md={4}>
               <h1>G</h1>

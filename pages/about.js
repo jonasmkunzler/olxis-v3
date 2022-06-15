@@ -9,7 +9,7 @@ import Copyright from '../src/Copyright';
 
 export default function About() {
   return (
-    <Container maxWidth="sm">
+    <Container maxwidth="sm">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Next.js example
