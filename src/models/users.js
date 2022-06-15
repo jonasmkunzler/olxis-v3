@@ -7,7 +7,7 @@ const schema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: [true, 'O campo "senha" é obrigatório.'],
+    required: [true, 'O campo "senha" é obrigatórioU.'],
   },
 });
 export default mongoose.models.users || mongoose.model('users', schema);
