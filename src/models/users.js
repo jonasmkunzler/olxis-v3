@@ -10,4 +10,4 @@ const schema = new mongoose.Schema({
     required: [true, 'O campo "senha" é obrigatório.'],
   },
 });
-export default mongoose.models.users || mongoose.model('users,schema');
+export default mongoose.models.users || mongoose.model('users', schema);
